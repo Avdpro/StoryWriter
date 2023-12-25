@@ -210,6 +210,8 @@ let MainUI=function(app,appFrame){
 	//------------------------------------------------------------------------
 	cssVO.doViewStory=async function(sender,event){
 		/*#{1HI9PMO650Start*/
+		if(!isMobile)
+			return;
 		/*}#1HI9PMO650Start*/
 		self.showFace("view");
 	};
@@ -231,6 +233,9 @@ let MainUI=function(app,appFrame){
 				{id:"GPT4T",text:"使用ChatGPT4 Turbo"}
 			];
 			/*#{1HIFTOFRK0Items*/
+			if(!isMobile){
+				$items[0].enable=false;
+			}
 			if(app.story){
 				if(app.story.LLMMode==="gpt-3.5-turbo"){
 					$items[1].check=true;
@@ -929,7 +934,7 @@ export{MainUI};
 //							"type": "hudobj",
 //							"def": "Gear/@aichat/ui/BoxTokenGas.js",
 //							"jaxId": "1HHAM34NF0",
-//							"editVersion": 40,
+//							"editVersion": 46,
 //							"attrs": {
 //								"createArgs": {
 //									"type": "object",
@@ -948,7 +953,7 @@ export{MainUI};
 //								"properties": {
 //									"type": "object",
 //									"jaxId": "1HHAM41551",
-//									"editVersion": 42,
+//									"editVersion": 44,
 //									"attrs": {
 //										"type": "#null#>BoxTokenGas(30,cfgColor[\"secondary\"],cfgColor[\"fontSecondary\"],24,16,true)",
 //										"id": "BoxHeader",
@@ -1115,7 +1120,7 @@ export{MainUI};
 //											"type": "hudobj",
 //											"def": "Gear/@aichat/ui/UIChat.js",
 //											"jaxId": "1HDBT34IS0",
-//											"editVersion": 67,
+//											"editVersion": 73,
 //											"attrs": {
 //												"createArgs": {
 //													"type": "object",
@@ -1220,7 +1225,7 @@ export{MainUI};
 //												"properties": {
 //													"type": "object",
 //													"jaxId": "1HDBT8BEP17",
-//													"editVersion": 61,
+//													"editVersion": 63,
 //													"attrs": {
 //														"type": "#null#>UIChat({\"bubble\":false,\"ai\":{\"blkColor\":[0,0,0,0],\"bgColor\":cfgColor[\"success\"],\"icon\":appCfg.sharedAssets+\"/faces.svg\",\"pic\":\"\",\"textColor\":cfgColor[\"fontBody\"],\"iconColor\":cfgColor[\"fontSuccess\"],\"side\":\"left\"},\"user\":{\"blkColor\":[0,0,0,0],\"bgColor\":cfgColor.primary,\"icon\":appCfg.sharedAssets+\"/user.svg\",\"pic\":\"\",\"textColor\":cfgColor[\"fontBody\"],\"iconColor\":cfgColor[\"fontPrimary\"],\"side\":\"right\"},\"wait\":{\"blkColor\":[0,0,0,0],\"bgColor\":cfgColor[\"secondary\"],\"icon\":appCfg.sharedAssets+\"/faces.svg\",\"pic\":\"\",\"textColor\":cfgColor[\"fontBody\"],\"iconColor\":cfgColor[\"fontSecondary\"],\"side\":\"left\"},\"event\":{\"blkColor\":[0,0,0,0],\"bgColor\":cfgColor[\"warning\"],\"icon\":appCfg.sharedAssets+\"/event.svg\",\"pic\":\"\",\"textColor\":cfgColor[\"fontBody\"],\"iconColor\":cfgColor[\"fontWarning\"],\"side\":\"left\"},\"error\":{\"blkColor\":[0,0,0,0],\"bgColor\":cfgColor[\"error\"],\"icon\":appCfg.sharedAssets+\"/fat_right.svg\",\"pic\":\"\",\"textColor\":[155,0,0,1],\"iconColor\":cfgColor[\"fontError\"],\"side\":\"left\"},\"ask\":{\"blkColor\":[0,0,0,0],\"bgColor\":cfgColor[\"success\"],\"icon\":appCfg.sharedAssets+\"/help.svg\",\"pic\":\"\",\"textColor\":cfgColor[\"fontBody\"],\"iconColor\":cfgColor[\"fontSuccess\"],\"side\":\"left\"}})",
 //														"id": "BoxAIChat",
@@ -1377,7 +1382,7 @@ export{MainUI};
 //											"type": "hudobj",
 //											"def": "box",
 //											"jaxId": "1HI9IL4SO0",
-//											"editVersion": 42,
+//											"editVersion": 44,
 //											"attrs": {
 //												"properties": {
 //													"type": "object",
@@ -1431,7 +1436,7 @@ export{MainUI};
 //															"type": "hudobj",
 //															"def": "Gear/@StdUI/ui/TxtMarkdown.js",
 //															"jaxId": "1HI9INFAA0",
-//															"editVersion": 40,
+//															"editVersion": 44,
 //															"attrs": {
 //																"createArgs": {
 //																	"type": "object",
@@ -1446,7 +1451,7 @@ export{MainUI};
 //																"properties": {
 //																	"type": "object",
 //																	"jaxId": "1HI9IO6U01",
-//																	"editVersion": 66,
+//																	"editVersion": 68,
 //																	"attrs": {
 //																		"type": "#null#>TxtMarkdown(\"\",15)",
 //																		"id": "MDStory",
@@ -1713,7 +1718,7 @@ export{MainUI};
 //											"type": "hudobj",
 //											"def": "box",
 //											"jaxId": "1HI9JAFJU0",
-//											"editVersion": 30,
+//											"editVersion": 32,
 //											"attrs": {
 //												"properties": {
 //													"type": "object",
@@ -1767,7 +1772,7 @@ export{MainUI};
 //															"type": "hudobj",
 //															"def": "Gear/@StdUI/ui/BtnIcon.js",
 //															"jaxId": "1HI9JBU7N0",
-//															"editVersion": 41,
+//															"editVersion": 45,
 //															"attrs": {
 //																"createArgs": {
 //																	"type": "object",
@@ -1785,7 +1790,7 @@ export{MainUI};
 //																"properties": {
 //																	"type": "object",
 //																	"jaxId": "1HI9P2NVT20",
-//																	"editVersion": 57,
+//																	"editVersion": 59,
 //																	"attrs": {
 //																		"type": "#null#>BtnIcon(\"front\",32,0,appCfg.sharedAssets+\"/yulan.svg\",null)",
 //																		"id": "BtnViewStory",
@@ -2053,7 +2058,7 @@ export{MainUI};
 //											"type": "hudobj",
 //											"def": "box",
 //											"jaxId": "1HI9P4UQ30",
-//											"editVersion": 33,
+//											"editVersion": 35,
 //											"attrs": {
 //												"properties": {
 //													"type": "object",
@@ -2107,7 +2112,7 @@ export{MainUI};
 //															"type": "hudobj",
 //															"def": "Gear/@StdUI/ui/BtnIcon.js",
 //															"jaxId": "1HI9P4UQ40",
-//															"editVersion": 43,
+//															"editVersion": 47,
 //															"attrs": {
 //																"createArgs": {
 //																	"type": "object",
@@ -2125,7 +2130,7 @@ export{MainUI};
 //																"properties": {
 //																	"type": "object",
 //																	"jaxId": "1HI9P4UQ42",
-//																	"editVersion": 59,
+//																	"editVersion": 61,
 //																	"attrs": {
 //																		"type": "#null#>BtnIcon(\"front\",32,0,appCfg.sharedAssets+\"/close.svg\",null)",
 //																		"id": "BtnCloseView",

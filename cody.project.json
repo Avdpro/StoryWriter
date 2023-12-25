@@ -1,0 +1,128 @@
+{
+	"type": "object",
+	"def": "EditPrj",
+	"jaxId": "1GGJKJ3BS0",
+	"editVersion": 20,
+	"attrs": {
+		"docDatas": {
+			"type": "object",
+			"def": "DocsObj",
+			"jaxId": "1GGJKJ3BS1",
+			"editVersion": 0,
+			"attrs": {}
+		},
+		"docAIAgents": {
+			"type": "object",
+			"def": "DocsObj",
+			"jaxId": "1HDBOSUQQ0",
+			"editVersion": 18,
+			"attrs": {
+				"agent.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HDBOSUN90",
+					"editVersion": 52,
+					"path": "ai/agent.js"
+				},
+				"mem.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HE544DRT0",
+					"editVersion": 24,
+					"path": "ai/mem.js"
+				},
+				"NewStory.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HI79QI6P0",
+					"editVersion": 37,
+					"path": "ai/NewStory.js"
+				},
+				"WriteSeg.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HI7BOT5S0",
+					"editVersion": 34,
+					"path": "ai/WriteSeg.js"
+				},
+				"LoadStory.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HI98V9M00",
+					"editVersion": 40,
+					"path": "ai/LoadStory.js"
+				},
+				"ViewStory.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HI9A49JT0",
+					"editVersion": 28,
+					"path": "ai/ViewStory.js"
+				},
+				"ExportStory.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HIAN9JQ30",
+					"editVersion": 28,
+					"path": "ai/ExportStory.js"
+				},
+				"EditStory.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HIAPD7FP0",
+					"editVersion": 30,
+					"path": "ai/EditStory.js"
+				},
+				"UpdatePack.js": {
+					"type": "docfile",
+					"def": "DocAIAgent",
+					"jaxId": "1HIBTGACI0",
+					"editVersion": 28,
+					"path": "ai/UpdatePack.js"
+				}
+			}
+		},
+		"docGears": {
+			"type": "object",
+			"def": "DocsObj",
+			"jaxId": "1GGJKJ3BS2",
+			"editVersion": 2,
+			"attrs": {
+				"BoxSeg.js": {
+					"type": "docfile",
+					"def": "GearButton",
+					"jaxId": "1HIASUKH50",
+					"editVersion": 67,
+					"path": "ui/BoxSeg.js"
+				}
+			}
+		},
+		"docViews": {
+			"type": "object",
+			"def": "DocsObj",
+			"jaxId": "1GGJKJ3BS3",
+			"editVersion": 4,
+			"attrs": {
+				"MainUI.js": {
+					"type": "docfile",
+					"def": "UIView",
+					"jaxId": "1GGJKM84D0",
+					"editVersion": 49,
+					"path": "ui/MainUI.js"
+				},
+				"DlgSegs.js": {
+					"type": "docfile",
+					"def": "GearHud",
+					"jaxId": "1HIARMBHP0",
+					"editVersion": 152,
+					"path": "ui/DlgSegs.js"
+				}
+			}
+		}
+	},
+	"externGearLibs": [
+		"/@StdUI",
+		"/@aichat"
+	],
+	"preloadFiles": []
+}

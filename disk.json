@@ -1,0 +1,11 @@
+{
+	"imports": {
+		"StdUI": "V1",
+		"cokemake": "v1",
+		"terser": "v1",
+		"rollup": "v1"
+	},
+	"cloudId": "StoryWrite@avdpro@me.com",
+	"versionIdx": 3,
+	"version": "0.0.5"
+}

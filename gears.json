@@ -1,0 +1,51 @@
+{
+	"version": "1.0.0",
+	"libs": [
+		"/@StdUI",
+		"/@aichat"
+	],
+	"preloads": [],
+	"fonts": null,
+	"datas": {},
+	"views": {},
+	"gears": {
+		"BoxSeg": {
+			"name": "BoxSeg",
+			"path": "ui/BoxSeg.js",
+			"icon": "gears.svg",
+			"showName": "BoxSeg",
+			"catalog": ""
+		},
+		"DlgSegs": {
+			"name": "DlgSegs",
+			"path": "ui/DlgSegs.js",
+			"icon": "gears.svg",
+			"showName": "标准对话框",
+			"catalog": ""
+		}
+	},
+	"gearIndexes": {
+		"Gear1HIASUKH50": {
+			"path": "ui/BoxSeg.js"
+		},
+		"Gear1GGJKM84D0": {
+			"path": "ui/MainUI.js",
+			"expose": false
+		},
+		"Gear1HIARMBHP0": {
+			"path": "ui/DlgSegs.js",
+			"expose": false
+		}
+	},
+	"templates": {
+		"ui/DlgSegs.js": {
+			"template": true,
+			"name": "Template1HIARMBHP0",
+			"showName": "Standard Dialog",
+			"path": "ui/DlgSegs.js",
+			"description": "",
+			"icon": "gears.svg",
+			"catalog": "ViewTemplates"
+		}
+	}
+}

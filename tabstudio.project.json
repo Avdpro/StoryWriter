@@ -1,0 +1,31 @@
+{
+	"edit": {
+		"indent": 4
+	},
+	"run": [
+		{
+			"profileName": "Debug Agent",
+			"profileIcon": "/~/-tabos/shared/assets/lab.svg",
+			"arg": {
+				"file": "ai/agent.js"
+			},
+			"main": "/@aichat/debug.html",
+			"icon": "app.svg",
+			"mode": "FrameApp",
+			"width": 1000,
+			"height": 800
+		},
+		{
+			"profileName": "Run Chat App",
+			"profileIcon": "/~/-tabos/shared/assets/run.svg",
+			"main": "app.html",
+			"mode": "FrameApp",
+			"width": 800,
+			"height": 600
+		}
+	],
+	"addOns": [
+		"/@editkit/EditAddOn.js",
+		"/@editkit/EditAIAddOn.js"
+	]
+}
